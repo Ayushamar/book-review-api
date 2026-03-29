@@ -1,0 +1,33 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Logs
+*.log
+
+# Compiled files
+*.class
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Redis dump (if exists)
+dump.rdb
+
+# Application local configs (optional)
+application-local.properties
