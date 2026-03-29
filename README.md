@@ -142,9 +142,9 @@ Controller → Service → Repository → Database
 - Pagination for scalability  
 - Clean separation of concerns  
 
----
 ## 📁 Project Structure
 
+```bash
 book-review-api/
 ├── src/
 │   ├── main/
@@ -187,22 +187,19 @@ book-review-api/
 │   │   │               │   ├── JwtService.java
 │   │   │               │   ├── SecurityConfig.java
 │   │   │               │   └── CustomUserDetailsService.java
-│   │   │               ├── exception/
-│   │   │               │   ├── GlobalExceptionHandler.java
-│   │   │               │   ├── ResourceNotFoundException.java
-│   │   │               │   └── DuplicateResourceException.java
-│   │   │               └── util/
-│   │   ├── resources/
-│   │   │   ├── application.properties
-│   │   │   └── data.sql
-│   │   └── test/
-│   │       └── java/
-│   │           └── com/
-│   │               └── ayush/
-│   │                   └── bookreview/
-│   │                       └── BookreviewApplicationTests.java
+│   │   │               └── exception/
+│   │   │                   ├── GlobalExceptionHandler.java
+│   │   │                   ├── ResourceNotFoundException.java
+│   │   │                   └── DuplicateResourceException.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── data.sql
 │   └── test/
+│       └── java/
+│           └── com/
+│               └── ayush/
+│                   └── bookreview/
+│                       └── BookreviewApplicationTests.java
 ├── pom.xml
 ├── README.md
 └── .gitignore
-
