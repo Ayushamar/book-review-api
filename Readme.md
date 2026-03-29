@@ -122,71 +122,70 @@ http://localhost:8080/swagger-ui/index.html
 
 ---
 
+## Project Structure
+
+
 book-review-api/
-│
 ├── src/
 │   ├── main/
-│   │   ├── java/com/ayush/bookreview/
-│   │   │
-│   │   │── auth/
-│   │   │   ├── controller/
-│   │   │   ├── service/
-│   │   │   ├── dto/
-│   │   │   └── repository/
-│   │   │
-│   │   │── book/
-│   │   │   ├── controller/
-│   │   │   ├── service/
-│   │   │   ├── dto/
-│   │   │   └── repository/
-│   │   │
-│   │   │── review/
-│   │   │   ├── controller/
-│   │   │   ├── service/
-│   │   │   ├── dto/
-│   │   │   └── repository/
-│   │   │
-│   │   │── user/
-│   │   │   ├── service/
-│   │   │   ├── dto/
-│   │   │   └── repository/
-│   │   │
-│   │   │── entity/
-│   │   │   ├── User.java
-│   │   │   ├── Book.java
-│   │   │   ├── Review.java
-│   │   │   └── enums/
-│   │   │       └── Role.java
-│   │   │
-│   │   │── common/
-│   │   │   ├── config/
-│   │   │   │   ├── RedisConfig.java
-│   │   │   │   └── SwaggerConfig.java (optional)
-│   │   │   │
-│   │   │   ├── security/
-│   │   │   │   ├── JwtFilter.java
-│   │   │   │   ├── JwtService.java
-│   │   │   │   ├── SecurityConfig.java
-│   │   │   │   └── CustomUserDetailsService.java
-│   │   │   │
-│   │   │   ├── exception/
-│   │   │   │   ├── GlobalExceptionHandler.java
-│   │   │   │   ├── ResourceNotFoundException.java
-│   │   │   │   └── DuplicateResourceException.java
-│   │   │   │
-│   │   │   └── util/
-│   │   │
-│   │   │── BookreviewApplication.java
-│   │
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── data.sql (optional)
-│   │
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── ayush/
+│   │   │           └── bookreview/
+│   │   │               ├── BookreviewApplication.java
+│   │   │               ├── auth/
+│   │   │               │   ├── controller/
+│   │   │               │   ├── service/
+│   │   │               │   └── dto/
+│   │   │               ├── book/
+│   │   │               │   ├── controller/
+│   │   │               │   ├── service/
+│   │   │               │   ├── dto/
+│   │   │               │   └── repository/
+│   │   │               ├── review/
+│   │   │               │   ├── controller/
+│   │   │               │   ├── service/
+│   │   │               │   ├── dto/
+│   │   │               │   └── repository/
+│   │   │               ├── user/
+│   │   │               │   ├── service/
+│   │   │               │   ├── dto/
+│   │   │               │   └── repository/
+│   │   │               ├── entity/
+│   │   │               │   ├── User.java
+│   │   │               │   ├── Book.java
+│   │   │               │   └── Review.java
+│   │   │               ├── enums/
+│   │   │               │   └── Role.java
+│   │   │               ├── common/
+│   │   │               │   └── config/
+│   │   │               │       └── RedisConfig.java
+│   │   │               ├── config/
+│   │   │               │   └── SwaggerConfig.java
+│   │   │               ├── security/
+│   │   │               │   ├── JwtFilter.java
+│   │   │               │   ├── JwtService.java
+│   │   │               │   ├── SecurityConfig.java
+│   │   │               │   └── CustomUserDetailsService.java
+│   │   │               ├── exception/
+│   │   │               │   ├── GlobalExceptionHandler.java
+│   │   │               │   ├── ResourceNotFoundException.java
+│   │   │               │   └── DuplicateResourceException.java
+│   │   │               └── util/
+│   │   ├── resources/
+│   │   │   ├── application.properties
+│   │   │   └── data.sql
+│   │   └── test/
+│   │       └── java/
+│   │           └── com/
+│   │               └── ayush/
+│   │                   └── bookreview/
+│   │                       └── BookreviewApplicationTests.java
 │   └── test/
-│
 ├── pom.xml
 ├── README.md
-├── .gitignore
+└── .gitignore
+
 
 ## Architecture
 
