@@ -133,6 +133,16 @@ Controller → Service → Repository → Database
 - Input validation is handled using annotations  
 
 ---
+
+## Design Considerations
+
+- Stateless authentication using JWT  
+- Redis caching for performance optimization  
+- Business rules enforced at multiple layers  
+- Pagination for scalability  
+- Clean separation of concerns  
+
+---
 ## 📁 Project Structure
 
 book-review-api/
@@ -196,16 +206,3 @@ book-review-api/
 ├── README.md
 └── .gitignore
 
-## Design Considerations
-
-- Stateless authentication using JWT  
-- Redis caching for performance optimization  
-- Business rules enforced at multiple layers  
-- Pagination for scalability  
-- Clean separation of concerns  
-
----
-
-## Future Improvements
-
-- Docker-based deployment  
